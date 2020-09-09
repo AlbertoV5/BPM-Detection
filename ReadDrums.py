@@ -44,7 +44,7 @@ for i in os.listdir(outputFolder):
                     print(i, bpm)
                 else:
                     bpms, peaks = onset.GetBPMS(song, tr, 120)
-                    bpm = bpm + 0.0069
+                    bpm = bpms[0][1] + 0.0069
                     print(i, bpm)
                     
                 bpmList.append(bpm)
